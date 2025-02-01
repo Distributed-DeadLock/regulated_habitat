@@ -1,0 +1,11 @@
+# Limit Set-Spawn with beds
+limit_beds (Limit beds) bool true
+
+# Limit sethome-command
+limit_sethome (Limit sethome) bool true
+
+# Limit protector, protected door & chest placement
+limit_protector (Limit protector) bool true
+
+# Limit unified_inventories sethome-command.
+limit_ui (Limit unified_inventory) bool true
