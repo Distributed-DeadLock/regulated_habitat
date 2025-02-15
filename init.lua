@@ -11,7 +11,7 @@ regulated_habitat.limit_beds = core.settings:get_bool("limit_beds", true)
 regulated_habitat.limit_sethome = core.settings:get_bool("limit_sethome", true)
 regulated_habitat.limit_protector = core.settings:get_bool("limit_protector", true)
 regulated_habitat.limit_ui = core.settings:get_bool("limit_ui", true)
-
+regulated_habitat.limit_pvp = core.settings:get_bool("limit_pvp", true)
 
 dofile(modpath .. "/area_mgt.lua")
 
@@ -29,4 +29,8 @@ end
 
 if (core.get_modpath("unified_inventory") and regulated_habitat.limit_ui) then
 	dofile(modpath .. "/unified_inventory.lua")
+end
+
+if regulated_habitat.limit_pvp then
+	dofile(modpath .. "/pvp.lua")
 end

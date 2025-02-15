@@ -9,3 +9,6 @@ limit_protector (Limit protector) bool true
 
 # Limit unified_inventories sethome-command.
 limit_ui (Limit unified_inventory) bool true
+
+# Disable PvP-damage in habitats.
+limit_pvp (Limit PvP) bool true
