@@ -12,3 +12,9 @@ limit_ui (Limit unified_inventory) bool true
 
 # Disable PvP-damage in habitats.
 limit_pvp (Limit PvP) bool true
+
+# Limit Lava-placement in habitats above a certain y-level.
+limit_lava (Limit Lava Placement) bool true
+
+#Y-Level above which Lava-placement is limited in habitats
+lava_limit_y (Y Level) int 0

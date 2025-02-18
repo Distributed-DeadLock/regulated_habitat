@@ -12,6 +12,8 @@ regulated_habitat.limit_sethome = core.settings:get_bool("limit_sethome", true)
 regulated_habitat.limit_protector = core.settings:get_bool("limit_protector", true)
 regulated_habitat.limit_ui = core.settings:get_bool("limit_ui", true)
 regulated_habitat.limit_pvp = core.settings:get_bool("limit_pvp", true)
+regulated_habitat.limit_lava = core.settings:get_bool("limit_lava", true)
+regulated_habitat.lava_limit_y = tonumber(core.settings:get("lava_limit_y") or 0)
 
 dofile(modpath .. "/area_mgt.lua")
 
@@ -33,4 +35,8 @@ end
 
 if regulated_habitat.limit_pvp then
 	dofile(modpath .. "/pvp.lua")
+end
+
+if (core.get_modpath("bucket") and regulated_habitat.limit_lava) then
+	dofile(modpath .. "/lava.lua")
 end
