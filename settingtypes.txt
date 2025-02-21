@@ -18,3 +18,9 @@ limit_lava (Limit Lava Placement) bool true
 
 #Y-Level above which Lava-placement is limited in habitats
 lava_limit_y (Y Level) int 0
+
+# Limit TNT-placement in habitats above a certain y-level.
+limit_tnt (Limit Lava Placement) bool true
+
+#Y-Level above which TNT-placement is limited in habitats
+tnt_limit_y (Y Level) int 0
